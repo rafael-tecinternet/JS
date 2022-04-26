@@ -20,10 +20,17 @@ titulo.textContent = "Olá Mundo!";
 subtitulo[0].textContent = "Full Stack";
 
 const legenda = document.querySelector('figcaption')
-legenda.innerHTML = "<b>Legenda da imagem</b>" //innerhtml serve pra mudar tag 
+legenda.innerHTML = "<b>Legenda da imagem</b>" //innerhtml serve pra mudar o html com tags (deixar negrito) 
 
 //CSS via JS
 titulo.style.textAlign = "center";
 titulo.style.backgroundImage = "linear-gradient(lightyellow, lightblue)";
-titulo.style.color= "#333";
+titulo.style.color = "#333";
 
+const listaEditores = document.querySelector('#lista-editores'); /* # serve para selecionar uma lista */
+const ultimo = listaEditores.querySelector('li:last-child');
+const primeiro = listaEditores.querySelector('li:first-child');
+const outro = listaEditores.querySelector('li:nth-child(2)');
+
+outro.innerHTML = "Agora vai";
+outro.style.color = "red";
