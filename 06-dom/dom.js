@@ -31,6 +31,17 @@ const listaEditores = document.querySelector('#lista-editores'); /* # serve para
 const ultimo = listaEditores.querySelector('li:last-child');
 const primeiro = listaEditores.querySelector('li:first-child');
 const outro = listaEditores.querySelector('li:nth-child(2)');
-
+/* 
 outro.innerHTML = "Agora vai";
-outro.style.color = "red";
+outro.style.color = "red"; */
+ultimo.classList.add('destaque-item'); /* Adicionando classe na constante */
+
+// Adicionando o atributo target em todos os links da lista de refêrencia
+// Selecionando todos os links contidos na lista ul
+const links = document.querySelectorAll('ul li a');
+console.log(links)
+//links[1].style.color = "red";
+
+for (let i = 0; i < links.length; i++) {
+    links[i].setAttribute('target', '_blank') // adiciona um atributo
+}
