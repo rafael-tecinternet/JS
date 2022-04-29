@@ -9,10 +9,26 @@
 <body>
     <h1>Conversor de Moedas</h1>
     
+    <!-- Soluçaõ 2 -->
+
+    <p><label for="cotacaoDolar">Cotação do Dolar:</label></p>
+    <input type="number" id="cotacaoDolar" required>
+
+   <p><label for="valorDolar">Digite o valor que deseja converter:</label></p>
+    <input type="number" name="" id="valorDolar" required>
+    <input type="submit" value="Converter" onclick="converteDolar()">
+
+    <h2 id="resultado"></h2>
+
+    <!--     
+    solução 1 - Dólar com valor fixo
+
     <label for="valorDolar">Digite o valor que deseja converter:</label>
     <input type="number" name="" id="valorDolar" required>
-
     <input type="submit" value="Converter" onclick="converteDolar()">
+
+    <h2 id="resultado"></h2> 
+    -->
 
     <script src="conversor.js"></script>
 </body>
