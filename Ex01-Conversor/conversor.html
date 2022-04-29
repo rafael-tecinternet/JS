@@ -8,27 +8,36 @@
 </head>
 <body>
     <h1>Conversor de Moedas</h1>
-    
-    <!-- Soluçaõ 2 -->
+    <!-- Soluçaõ 3 -->
+    <form action="">
+        <p><label for="cotacao">Cotação:</label></p>
+        <input type="number" min="0" max="10" step="0.01" id="cotacao" required>
 
-    <p><label for="cotacaoDolar">Cotação do Dolar:</label></p>
+        <p><label for="valor">Digite o valor que deseja converter:</label></p>
+        <input type="number" min="0" max="10" step="0.01" id="valor" required>
+        <input type="submit" value="Converter">
+    </form>    
+    <h2 id="resultado"></h2>
+    
+    <!-- Soluçaõ 2 - Usuário digita o valor da moeda que quer converter.Seja dólar ou qualquer outro-->
+
+    <!-- <p><label for="cotacaoDolar">Cotação do Dolar:</label></p>
     <input type="number" id="cotacaoDolar" required>
 
-   <p><label for="valorDolar">Digite o valor que deseja converter:</label></p>
+    <p><label for="valorDolar">Digite o valor que deseja converter:</label></p>
     <input type="number" name="" id="valorDolar" required>
     <input type="submit" value="Converter" onclick="converteDolar()">
 
-    <h2 id="resultado"></h2>
+    <h2 id="resultado"></h2> -->
 
-    <!--     
-    solução 1 - Dólar com valor fixo
-
+    <!-- solução 1 - Dólar com valor fixo
+    
     <label for="valorDolar">Digite o valor que deseja converter:</label>
     <input type="number" name="" id="valorDolar" required>
     <input type="submit" value="Converter" onclick="converteDolar()">
 
-    <h2 id="resultado"></h2> 
-    -->
+    <h2 id="resultado"></h2> -->
+    
 
     <script src="conversor.js"></script>
 </body>
